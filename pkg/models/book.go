@@ -1,8 +1,8 @@
 package models
 
 import (
-	"github.com/Muhammederendemir/go-bookstore/pkg/config"
-	"github.com/Muhammederendemir/go-booktsore/pkg/config"
+	"github.com/Muhammederendemir/go-bookstore/tree/main/pkg/config"
+	"github.com/Muhammederendemir/go-booktsore/tree/main/pkg/config"
 	"github.com/jinzhu/gorm"
 )
 
