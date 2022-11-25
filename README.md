@@ -51,6 +51,22 @@ go run main.go
 }
 ```
 
+## 📌 Response Body
+
+```JSON
+[
+    {
+        "ID": 1,
+        "CreatedAt": "2022-11-25T06:47:18Z",
+        "UpdatedAt": "2022-11-25T06:47:18Z",
+        "DeletedAt": null,
+        "Name": "Go book",
+        "author": "Muhammed Eren Demir",
+        "publication": "DR"
+    }
+]
+```
+
 ## 📌 Packages
 
 - encoding/json
