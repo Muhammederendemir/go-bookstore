@@ -1,16 +1,17 @@
 package models
 
 import (
-	"github.com/Muhammederendemir/go-bookstore/tree/main/pkg/config"
-	"github.com/Muhammederendemir/go-booktsore/tree/main/pkg/config"
+	"go-bookstore/pkg/config"
+
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 var db *gorm.DB
 
 type Book struct {
 	gorm.Model
-	Name        string `gorm:""json:"name"`
+	Name        string `gorm:"json:"name""`
 	Author      string `json:"author"`
 	Publication string `json:"publication"`
 }

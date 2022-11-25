@@ -6,8 +6,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/Muhammederendemir/go-bookstore/tree/main/pkg/models"
-	"github.com/Muhammederendemir/go-bookstore/tree/main/pkg/utils"
+	"go-bookstore/pkg/models"
+	"go-bookstore/pkg/utils"
+
 	"github.com/gorilla/mux"
 )
 
@@ -50,7 +51,7 @@ func CreateBook(w http.ResponseWriter, r *http.Request) {
 }
 
 func DeleteBook(w http.ResponseWriter, r *http.Request) {
-	vars := mux.vars(r)
+	vars := mux.Vars(r)
 	bookId := vars["bookId"]
 	ID, err := strconv.ParseInt(bookId, 0, 0)
 	if err != nil {
